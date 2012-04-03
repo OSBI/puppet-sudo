@@ -45,9 +45,9 @@ define sudo::directive (
   
   }
 
-  exec {"sudo-syntax-check for file $dname":
-    command     => "visudo -c -f /etc/sudoers.d/${dname} || ( rm -f /etc/sudoers.d/${dname} && exit 1)",
-    refreshonly => true,
-  }
+#  exec {"sudo-syntax-check for file $dname":
+#    command     => "visudo -c -f /etc/sudoers.d/${dname} || ( rm -f /etc/sudoers.d/${dname} && exit 1)",
+#    refreshonly => true,
+#  }
 
 }

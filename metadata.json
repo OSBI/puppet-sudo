@@ -13,7 +13,7 @@
     "README.rst": "a063bfacad431f0c4a115e98df7a0d4e",
     "lib/facter/sudo.rb": "9b1381a6f5cb47bc8bc1d2c488a758b6",
     "manifests/base.pp": "01df2f188a6ed9b4c41659b6fcd3121e",
-    "manifests/directive.pp": "cad32c475a5a6e6efbbeb471d2e5f9a7",
+    "manifests/directive.pp": "e731af37665268928efe113d10b2bb37",
     "manifests/init.pp": "47d485a6558cb0abd4c84379cfa2badc",
     "manifests/params.pp": "97bc3c332ddc9a39eb2d77c29ee8c2b9",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
