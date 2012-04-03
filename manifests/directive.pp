@@ -39,15 +39,15 @@ define sudo::directive (
         ""      => undef,  
         default => $source,
       },
-   #   notify  => Exec["sudo-syntax-check for file $dname"],
+      notify  => Exec["sudo-syntax-check for file $dname"],
       require => Package["sudo"],
     }
   
   }
 
-#  exec {"sudo-syntax-check for file $dname":
-#    command     => "visudo -c -f /etc/sudoers.d/${dname} || ( rm -f /etc/sudoers.d/${dname} && exit 1)",
-#    refreshonly => true,
-#  }
+  exec {"sudo-syntax-check for file $dname":
+    command     => "visudo -c -f /etc/sudoers.d/${dname} || ( rm -f /etc/sudoers.d/${dname} && exit 1)",
+    refreshonly => true,
+  }
 
 }
