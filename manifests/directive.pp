@@ -39,7 +39,7 @@ define sudo::directive (
         ""      => undef,  
         default => $source,
       },
-      notify  => Exec["sudo-syntax-check for file $dname"],
+   #   notify  => Exec["sudo-syntax-check for file $dname"],
       require => Package["sudo"],
     }
   
